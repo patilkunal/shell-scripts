@@ -1,0 +1,9 @@
+if (( $# == 0 ))
+#if we have zero parameters
+then
+#       echo "\t"$PWD
+ ls -l | awk '{ sum += $5} END {print "\tTotal Kbytes occupied: " sum/1024 " KB" } '
+else
+#       echo "\t"$1
+ ls -l $1 | awk '{ sum += $5} END {print "\tTotal Kbytes occupied: " sum/1024 " KB" } '
+fi
