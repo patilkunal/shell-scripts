@@ -1,0 +1,4 @@
+30 19 * * * /home/vendors/kpatil/export-es/export-index.sh tv_ y >> /home/vendors/kpatil/export-es/export.log
+00 20 * * * /home/vendors/kpatil/export-es/export-index.sh coxvodprimary y >> /home/vendors/kpatil/export-es/export.log
+30 20 * * * /home/vendors/kpatil/export-es/export-index.sh tmsentities y >> /home/vendors/kpatil/export-es/export.log
+
